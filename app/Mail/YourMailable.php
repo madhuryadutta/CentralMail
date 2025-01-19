@@ -14,14 +14,16 @@ class YourMailable extends Mailable
     use Queueable, SerializesModels;
     public $subject;
     public $body;
+    public $contentType;
     /**
      * Create a new message instance.
      */
 
-    public function __construct(string $subject, string $body)
+    public function __construct(string $subject, string $body, string $contentType = 'plain')
     {
         $this->subject = $subject;
         $this->body = $body;
+        $this->contentType = $contentType;
     }
     /**
      * Get the message envelope.

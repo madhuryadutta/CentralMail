@@ -69,7 +69,5 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## Test Code
 
 ``
-curl -X POST http://localhost:8000/
-api/send-email -H "Content-Type: application/json" -H "Authorization: Bearer your_token" -d '{"email":"recipient@example.com", "subj
-ect":"Test Email", "body":"This is a test email.", "smtp":"smtp1"}'
+curl -X POST http://localhost:8000/api/send-email -H "Content-Type: application/json" -H "Authorization: Bearer your_token" -d '{"email":"recipient@example.com", "subject":"Test Email", "body":"This is a test email.", "smtp":"smtp1"}'
 ``
