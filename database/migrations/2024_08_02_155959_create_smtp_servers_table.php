@@ -23,7 +23,7 @@ return new class extends Migration
             $table->integer('monthly_limit');
             $table->integer('daily_usage')->default(0);
             $table->integer('monthly_usage')->default(0);
-            $table->boolean('is_active')->default(true);    
+            $table->boolean('is_active')->default(true);
             $table->timestamps();
         });
     }

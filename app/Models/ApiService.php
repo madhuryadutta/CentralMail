@@ -2,25 +2,25 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class SmtpServer extends Model
+class ApiService extends Model
 {
-    use HasFactory;
-
     protected $fillable = [
         'name',
-        'host',
-        'port',
-        'encryption',
-        'username',
-        'password',
+        'type',
+        'base_url',
+        'api_key',
+        'auth_method',
+        'extra_data',
         'daily_limit',
         'monthly_limit',
         'daily_usage',
         'monthly_usage',
         'is_active',
-        'mail_from_address',
+    ];
+
+    protected $casts = [
+        'extra_data' => 'array', // Automatically decode JSON field
     ];
 }

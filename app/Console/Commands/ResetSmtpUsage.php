@@ -2,8 +2,9 @@
 
 namespace App\Console\Commands;
 
-use Illuminate\Console\Command;
 use App\Models\SmtpServer;
+use Illuminate\Console\Command;
+
 class ResetSmtpUsage extends Command
 {
     /**
